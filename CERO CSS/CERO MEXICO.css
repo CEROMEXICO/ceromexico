@@ -6,9 +6,9 @@
     text-decoration: none;
 }
 body{
-    
-    background: linear-gradient(90deg,#ff0000, #3700ff, #8400ff,#006eff);
-    background-size: 500%;
+    justify-content: center;
+    background: linear-gradient(90deg,#ff0000, #3700ff, #8400ff,#000000);
+    background-size: 1000% 500%;
     animation: BgGradient 60s ease infinite;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78f34', endColorstr='#cf5d9a', GradientType=1 );
 }
@@ -61,7 +61,7 @@ hr{
     justify-content: center;
     height: 55vh; 
     height: 1000px;   
-   box-shadow: 0px 15px 25px rgb(255, 255, 255);  
+    box-shadow: 0px 15px 25px rgb(255, 255, 255);  
 }
 .contenedor figure{
     position:relative;
@@ -171,27 +171,35 @@ hr{
         opacity: 1;
         visibility: visible;
     }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
     .contenedor figure:hover > .imagesp{
         transform: scale(-10);
         transition: all 2.5s;
     }
     .contenedor figure .capa h1{
+        
         transition: 10s;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 40px;
-        font-family: sans-serif;
+        font-family: Arial Nova;
         margin-bottom: 50px;
         transition: all 500ms ease-out;
         margin-top: 10px;   
 
     }
+    .contenedor figure .capa font{
+        color: rgb(0, 0, 0);
+        font-family: Arial Nova;
+
     
-    .contenedor figure .capa b{
-        color: rgb(255, 255, 255);
-        font-family: sans-serif;
     }
     .contenedor figure .capa a{
         color: rgb(0, 0, 0);
+        
+     
     }
     .contenedor figure:hover > .capa a{
         color: wheat;
@@ -204,8 +212,101 @@ hr{
 
 _______________________________________________________________________
 
-
+*{margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;}
     
+    .CEROMEXICO{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        overflow: hidden;
+        box-shadow: 0px 15px 25px rgb(255, 255, 255); 
+    }
+    .CEROMEXICO figure{
+       position:relative;
+        height: 500px;
+        cursor: pointer;
+        width: 2600px;
+        overflow: hidden;
+        border-radius: 6px;
+        
+
+    }
+    .CEROMEXICO figure  img.img1{
+        width: 75%;
+        height: 500px;
+        transition: all 500ms ease-out;
+        margin-left: 240px;
+        
+    }
+    .CEROMEXICO figure img{
+        width: 100px;
+        height: 100px;
+        transition: all 500ms ease-out;
+    }
+    .CEROMEXICO figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 500px;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+       
+       
+    }
+   
+    .CEROMEXICO figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .CEROMEXICO figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .CEROMEXICO figure:hover > img{
+        transform: scale(2.0);
+    }
+    .CEROMEXICO figure .capa h1{
+        transition: 10s;
+        color: rgb(255, 255, 255);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 50px;
+        transition: all 500ms ease-out;
+        margin-top: 10px;   
+    }
+    @media screen and (max-width: 1500px) {
+        .CEROMEXICO figure{
+            width: 100%;
+            height: 50vh;
+            
+        }
+     
+    }
+@media screen and (max-width: 1000px) {
+  
+    .CEROMEXICO figure{
+        width: 100%;
+        height: 50vh;
+        
+    }
+
+}
+@media screen and (max-width: 800px) {
+    
+    .CEROMEXICO figure{
+        
+        width: 100%;
+        height: 50vh;
+        
+    }
+ 
+}
+
 /*contenedor 3*/
 .content3{
     width: 100%;
@@ -289,15 +390,8 @@ opacity: 1;
     background: linear-gradient(90deg, #388585 20%, #416170 60%,rgb(27, 55, 134) 100%);
     margin-top: 40px;
     box-shadow: 0px 15px 25px rgb(255, 255, 255); 
-    overflow: hidden;
-    
 }
-.container-footer p{
-    color: rgb(184, 184, 184);
-    text-align: center;
-    font-size: 25px;
-    
-}
+
 .container-footer footer{
     max-width: 1200px;
     margin: auto;
@@ -336,7 +430,7 @@ opacity: 1;
     text-align: center;
     margin-top: 40px;
     color: rgba(245, 222, 179, 0.507);
-    font-size: 15px;
+    font-weight: 500;
 }
 
 
@@ -345,8 +439,10 @@ opacity: 1;
     font-size: 18px;
     transition: color 300ms;
 }
-
 /*Footer - REDES*/
+
+
+
 
 .container-footer footer .redes-footer .icon-redes-footer{
     font-size: 20px;
@@ -359,30 +455,25 @@ opacity: 1;
     align-items: center;
     border-radius: 100%;
     color: #233305b4;
-    transition: all 500ms;
 }
 
 footer .redes-footer .fa-facebook-f:hover{
     background: #0073f7;
     color: #fff;
-    transition: all 500ms;
 }
 
 footer .redes-footer .fa-envelope:hover{
     background: #DE4C34;
     color: #fff;
-    transition: all 500ms;
 }
 
 footer .redes-footer .fa-whatsapp:hover{
     background: #3cff00;
     color: #fff;
-    transition: all 500ms;
 }
 footer .redes-footer .fa-twitter:hover{
-    background: #00baf3;
+    background: #00a2ff;
     color: #fff;
-    transition: all 500ms;
 }
 
 
@@ -394,7 +485,7 @@ footer .redes-footer .fa-twitter:hover{
             height: 55vh;
         }
         .contenedor figure .imagesp{
-            margin: 0;
+            margin: 0 0;
             transition: all 500ms;
         }
        
@@ -445,10 +536,15 @@ footer .redes-footer .fa-twitter:hover{
       
 }
 @media screen and (max-width: 800px){
-    .contenedor{  
+    .contenedor{
+        
         width: 100%;
         height: 50vh;
     }
     
+}
+
+.gertve{
+    background: #858585;
 }
 
