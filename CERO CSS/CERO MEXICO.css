@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+    text-decoration: none;
+}
+body{
+    
+    background: linear-gradient(90deg,#ff0000, #3700ff, #8400ff,#006eff);
+    background-size: 500%;
+    animation: BgGradient 60s ease infinite;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78f34', endColorstr='#cf5d9a', GradientType=1 );
+}
+@keyframes BgGradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 70px;
+}
+img{
+    max-width: 100%;
+}
+hr{
+    width: 1000px;
+    margin: 20px auto;
+    border: none;
+    height: 7px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #2600ff,#8400ff,#ff0000);
+}
+
+.imginicio{
+    width: 70px;
+    height: 70px;
+    
+}
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh; 
+    height: 1000px;   
+    box-shadow: 0px 15px 25px rgb(99, 99, 99);  
+}
+.contenedor figure{
+    position:relative;
+    height: 100%;
+    cursor: pointer;
+    width: 10000px;
+    overflow: hidden;
+    transition: all 500ms;
+}
+  
+    /*images*/
+.imagesp{
+    justify-content: space-between;
+    display: flex;
+    margin: 200px 0;
+}
+
+.imgcero{
+    margin: auto 0 auto 25px;
+    height: 500px;
+    width: 500px;
+    background-size: 100% 100%;
+    animation: imgcero 15s infinite;
+    animation-direction: alternate;
+}
+@keyframes imgcero{
+    0%, 30% {
+        background-image: url(../escudos\ cero\ oficial/CERO\ ANIMATION1\.png);
+        opacity: 1;
+        
+    }
+    31%, 34% {
+        opacity: 0.9;
+        
+    }
+    35%, 65% {
+        background-image: url(../escudos\ cero\ oficial/CERO\ ANIMATION2\.png);
+        opacity: 1;
+        
+    }
+    66%, 69% {
+        opacity: 0.9;
+    }
+    70%, 100% {
+        background-image: url(../escudos\ cero\ oficial/CERO\ OFICIAL\.png);
+        opacity: 1;
+        
+    }
+}
+.imgsiio{
+    margin: auto 25px auto 0;
+    height: 500px;
+    width: 500px;
+    background-size: 100% 100%;
+    animation: imgsiio 15s infinite;
+    animation-direction: alternate;
+}
+@keyframes imgsiio{
+    0%, 30% {
+        background-image: url(../escudos\ cero\ oficial/SIIO\ ANIMATION1\.png);
+        opacity: 1;
+        
+    }
+    31%, 34% {
+        opacity: 0.9;
+        
+    }
+    35%, 65% {
+        background-image: url(../escudos\ cero\ oficial/SIIO\ ANIMATION2\.png);
+        opacity: 1;
+        
+    }
+    66%, 69% {
+        opacity: 0.9;
+    }
+    70%, 100% {
+        background-image: url(../escudos\ cero\ oficial/SIIO\.png);
+        opacity: 1;
+        
+    }
+}
+.imagen{
+    height: 500px;
+    width: 500px;
+}
+
+    .contenedor figure .imagesp{
+        width: 100%;
+        height: 500px;
+        transition: all 1.5s;
+        
+    }
+    
+  
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 700px;
+        transition: all 1000ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .imagesp{
+        transform: scale(-10);
+        transition: all 2.5s;
+    }
+    .contenedor figure .capa h1{
+        transition: 10s;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-family: sans-serif;
+        margin-bottom: 50px;
+        transition: all 500ms ease-out;
+        margin-top: 10px;   
+
+    }
+    
+    .contenedor figure .capa b{
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+    }
+    .contenedor figure .capa a{
+        color: rgb(0, 0, 0);
+    }
+    .contenedor figure:hover > .capa a{
+        color: wheat;
+        background-color: rgba(255, 255, 255, 0);
+        
+     
+    }
+
+
+
+_______________________________________________________________________
+
+
+    
+/*contenedor 3*/
+.content3{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-top: auto;
+    margin: 100px 0 0;
+}
+ 
+.sometext {
+    max-width: 100%;
+    width: 700px;
+    font-style: italic;
+    font-weight: 5;
+    margin: 20px auto;
+	font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    border-radius: 50px;
+    
+}
+
+@media (max-width: 780px) {
+    .sometext {
+opacity: 1;
+    }
+}
+.text:before {
+	content: '';
+    animation: changingTxt 15s linear infinite;
+    
+}
+
+@keyframes changingTxt {
+	0% {
+        content: 'CONSULTORES EN SEGURIDAD INTEGRAL';
+        color: rgb(255, 255, 255);
+        
+	}
+	20% {
+        content: ' PROTECCIÓN EJECUTIVA';
+        color: rgb(29, 29, 29);
+	}
+	40% {
+        content: 'CLOSE PROTECTION';
+        color: rgb(255, 255, 255);
+	}
+	60% {
+        content: 'COORDINACIÓN Y SUPERVISIÓN OPERATIVA';
+        color: rgb(29, 29, 29);
+	}
+	80% {
+        content: 'CERO MÉXICO';
+        color: rgb(255, 255, 255);
+	}
+	90% {
+        content: 'CERO MÉXICO';
+        color: rgb(29, 29, 29);
+    }
+    100% {
+        content: 'CONSULTORES EN SEGURIDAD INTEGRAL';
+        color: rgb(255, 255, 255);
+	}
+}
+
+
+
+
+/*Footer - pie de pagina*/
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(90deg, #388585 20%, #416170 60%,rgb(27, 55, 134) 100%);
+    margin-top: 40px;
+    box-shadow: 0px 15px 25px rgb(255, 255, 255); 
+    overflow: hidden;
+    
+}
+.container-footer p{
+    color: rgb(184, 184, 184);
+    text-align: center;
+    font-size: 25px;
+    
+}
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+    
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 4px;
+    background: linear-gradient(90deg, #4c00ff,#ff0000);
+    
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #000000;
+    font-weight: 500;
+}
+.container-footer .derechos{
+    text-align: center;
+    margin-top: 40px;
+    color: rgba(245, 222, 179, 0.507);
+    font-size: 15px;
+}
+
+
+.redes-foter a{
+    color: #ff0000;
+    font-size: 18px;
+    transition: color 300ms;
+}
+
+/*Footer - REDES*/
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #233305b4;
+    transition: all 500ms;
+}
+
+footer .redes-footer .fa-facebook-f:hover{
+    background: #0073f7;
+    color: #fff;
+    transition: all 500ms;
+}
+
+footer .redes-footer .fa-envelope:hover{
+    background: #DE4C34;
+    color: #fff;
+    transition: all 500ms;
+}
+
+footer .redes-footer .fa-whatsapp:hover{
+    background: #3cff00;
+    color: #fff;
+    transition: all 500ms;
+}
+footer .redes-footer .fa-twitter:hover{
+    background: #00baf3;
+    color: #fff;
+    transition: all 500ms;
+}
+
+
+
+    /*responsive*/
+    @media screen and (max-width: 1500px) {
+        .contenedor{
+            width: 100%;
+            height: 55vh;
+        }
+        .contenedor figure .imagesp{
+            margin: 0;
+            transition: all 500ms;
+        }
+       
+      
+    }
+    @media screen and (max-width: 1200px) {
+    
+        .contenedor{
+            width: 100%;
+            height: 50vh;
+            height: 900px;
+        }
+        .contenedor figure:hover > .imagesp{
+            margin: 400px 0;
+            transform: scale(0.9);
+            transition: all 2.5s;
+        }
+        .imgcero{
+            margin: auto 0 auto 25px;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+        }
+        .imgsiio{
+            margin: auto 25px auto 0;
+            height: 250px;
+            width: 250px;
+            display: inline-block;
+        }
+        .imagen{
+            height: 250px;
+            width: 250px;
+            transition: all 500ms;
+        }
+    }
+@media screen and (max-width: 1000px) {
+    
+    .contenedor{
+        width: 100%;
+        height: 50vh;
+        height: 900px;
+    }
+    .contenedor figure:hover > .imagesp{
+        margin: 400px 0;
+        transform: scale(0.9);
+    }
+    
+      
+}
+@media screen and (max-width: 800px){
+    .contenedor{  
+        width: 100%;
+        height: 50vh;
+    }
+    
+}
+

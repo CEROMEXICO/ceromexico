@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, rgb(0, 32, 173), rgb(0, 132, 255));
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial ;
+}
+.form-registro{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    top: 250px;
+    left: -170px;
+    border-radius: 10%;
+    transition: 300ms;
+    background: linear-gradient(to bottom, rgb(0, 32, 173), rgb(0, 132, 255));
+    
+}
+
+.form_titulo{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 238, 0);
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom: 5px solid rgb(251, 255, 0);
+}
+.container-input{
+    padding: 10px 30px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid rgb(21, 255, 0);
+}
+a{
+    border-radius: 30px;
+    border: 1px solid rgb(21, 255, 0);
+}
+.input-48{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+}
+.btn-enviar{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 10px 40px;  
+}
+.btn-enviar:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/*Footer - pie de pagina*/
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(90deg, #388585 20%, #416170 60%,  #1b3886 100%);
+    margin-top: 250px;
+    
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+    
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to bottom, rgb(0, 32, 173), rgb(0, 132, 255));
+}
+
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+    /*responsive footer*/
+    @media screen and (max-width: 1500px) {
+        body{
+            background: linear-gradient(to bottom, rgb(0, 32, 173), rgb(0, 132, 255));
+        }
+        .container-footer{
+            width: 100%;
+            padding: 40px 0;
+            background: linear-gradient(90deg, #cccccc 20%, #838383 60%,  #000000 100%);
+            margin-top: 950px;
+            
+        }
+      
+    }
+
+

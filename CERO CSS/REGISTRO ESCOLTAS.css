@@ -1,0 +1,246 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+	background: linear-gradient(#000000 5%, #2e2e2e 30%,  #b4b4b4 100%);
+    font-family: Arial; 
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 70px;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    text-align: center;
+    color: wheat;
+    
+}
+.tables{
+    text-align: center;
+    color: wheat;
+}
+
+
+/*Link*/
+a{
+    color: white;
+}
+
+.table{
+    max-width: 1000px;
+    margin: auto auto;
+}
+
+table{
+	background-color: rgb(204, 204, 204);
+	width: 100%;
+    margin-top: 10px;  
+}
+
+th, td{
+    padding: 10px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+
+thead{
+	background-color: #0066ff;
+	border-bottom: solid 5px #000000;
+    color: rgb(255, 255, 255);    
+}
+
+
+
+/*images*/
+.images1{
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.img1{
+    margin: auto 0 auto 25px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+.img2{
+    margin: auto 25px auto 0;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+.imagen{
+    height: 300px;
+    width: 300px;
+}
+img:hover{
+    transform: scale(0.9);
+    transition: all 400ms linear;
+    border-radius: 100%;
+}
+img{
+    transition: all 400ms linear;
+}
+
+/*Footer - pie de pagina*/
+
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(90deg, #388585 20%, #416170 60%,  #1b3886 100%);
+    margin-top: 40px;
+    
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+    
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #ffffff;
+}
+
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+
+
+/*TEXTO*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 100%;
+    height: 300px;
+	margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 6% 25%;
+    stroke-width: 5px;
+    stroke-dashoffset: 100%;
+    animation: stroke-offset 10s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #8f0000;
+	animation-delay: 1s;
+}
+
+.text-copy:nth-child(2){
+	stroke: #fbff00;
+	animation-delay: 2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #ffffff;
+	animation-delay: 3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #002efa;
+	animation-delay: 4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #000000;
+	animation-delay: 5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/*responsive*/
+
+
+
+/*Footer - REDES*/
+
+
+
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #000000;
+    transition: all 300ms linear;
+}
+
+
+
+.container-footer .redes-footer .fa-whatsapp:hover{
+    background: #3cff00;
+    color: #fff;
+    transition: all 300ms linear;
+}
+
+footer .redes-footer .fa-envelope:hover{
+    background: #DE4C34;
+    color: #fff;
+    transition: all 300ms linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

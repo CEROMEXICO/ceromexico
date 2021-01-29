@@ -1,0 +1,74 @@
+/*NIVELES*/
+tr.N1:hover td{
+	background-color: #000000;
+	color: rgb(53, 53, 53);
+}
+tr.N2:hover td{
+	background-color: hsl(199, 100%, 50%);
+	color: rgb(53, 53, 53);
+}
+
+/*Coordinadores y Supervisores Operativos de Identidad*/
+tr.tr-so1:hover td{
+	background-color: #00025c;
+	color: rgb(53, 53, 53);
+}
+tr.tr-so2:hover td{
+	background-color: #000000;
+	color: rgb(53, 53, 53);
+}
+
+/*AGENTES CERO*/
+tr.tr1:hover td{
+	background-color: #04035e;
+	color: rgb(53, 53, 53);
+}
+tr.tr2:hover td{
+	background-color: #ce0000;
+	color: rgb(0, 0, 0);
+}
+
+tr.tr3:hover td{
+	background-color: #ce0000;
+	color: rgb(0, 0, 0);
+}
+
+tr.tr4:hover td{
+	background-color: #000000;
+	color: rgb(53, 53, 53);
+}
+tr.tr5:hover td{
+	background-color: #000000;
+	color: rgb(53, 53, 53);
+}
+tr.tr6:hover td{
+	background-color: #000000;
+	color: rgb(53, 53, 53);
+}
+
+tr.tr7:hover td{
+	background-color: #ff0000;
+	color: rgb(0, 0, 0);
+}
+
+tr.tr8:hover td{
+	background-color: #ff0000;
+	color: rgb(0, 0, 0);
+}
+tr.tr9:hover td{
+	background-color: #ff0000;
+	color: rgb(53, 53, 53);
+}
+
+tr.tr10:hover td{
+	background-color: #001264;
+	color: rgb(53, 53, 53);
+}
+tr.tr11:hover td{
+	background-color: #000000;
+	color: rgb(53, 53, 53);
+}
+tr.tr12:hover td{
+	background-color: #ff0000;
+	color: rgb(0, 0, 0);
+}
