@@ -1114,7 +1114,7 @@
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 0, 76, 0.5);
     -webkit-transform: rotate(-30deg);
     transform: rotate(-65deg);
     margin-left: 350px;
@@ -1127,7 +1127,7 @@
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(255, 0, 98, 0.603);
+    background: rgba(255, 255, 255, 0);
     -webkit-transform: rotate(-30deg);
     transform: rotate(-65deg);
     margin-left: 390px;
@@ -1140,7 +1140,7 @@
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(60, 0, 199, 0.466);
+    background: rgba(48, 1, 158, 0.808);
     -webkit-transform: rotate(30deg);
     transform: rotate(-40deg);
     margin-left: 500px;
@@ -1156,7 +1156,7 @@
     height: 1000px;
     position: absolute;
     top: 0;
-    background: rgba(229, 255, 0, 0);
+    background: rgba(0, 0, 0, 0);
     -webkit-transform: rotate(30deg);
     transform: rotate(-40deg);
     margin-left: 500px;
@@ -1176,7 +1176,7 @@
 .content-img7:hover .content-26{
     width: 222%;
     margin-left: -40px;
-    background: rgba(0, 78, 196, 0);
+    background: rgb(0, 78, 196);
     opacity: 1;
     -webkit-transition: all 300ms;
     transition: all 300ms;
@@ -1192,7 +1192,7 @@
 .content-img7:hover .content-28{
     width: 222%;
     margin-left: -30px;
-    background: rgba(112, 112, 112, 0);
+    background: rgba(112, 112, 112, 0.295);
     opacity: 1;
     -webkit-transition: all 700ms;
     transition: all 700ms;
