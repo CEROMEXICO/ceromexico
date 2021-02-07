@@ -149,36 +149,13 @@ header{
 
 @media (max-width: 800px){
     header{
-	    height: 500px;
-        background-size: 100% 100%;
-        background-position: center center;
+	height: 500px;
+        background-size: 100%;
+        background-position: center;
         background-image: url(../IMAGESCERO/ad502dd5-6b12-41cd-b5be-6c206cae944d.jpeg);
         animation: header none;
     }
-    @keyframes header{
-        0%, 30% {
-            background-image: url(../IMAGESCERO/ad502dd5-6b12-41cd-b5be-6c206cae944d.jpeg);
-            opacity: 1;
-            
-        }
-        31%, 34% {
-            opacity: 1;
-            
-        }
-        35%, 65% {
-            background-image: url(../IMAGESCERO/409556de-1753-4cf7-8243-a956ac11d107.jpeg);
-            opacity: 1;
-            
-        }
-        66%, 69% {
-            opacity: 1;
-        }
-        70%, 100% {
-            background-image: url(../IMAGESCERO/ae42f84b-06c7-4d1f-9273-2cc2691d9c4d.jpeg);
-            opacity: 1;
-            
-        }
-    }
+
     .content3t{
         background-color: rgba(0, 0, 0, 0);
     }
