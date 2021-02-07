@@ -3,7 +3,7 @@ Swal.fire({
     text: 'CERO MÉXICO PROTECCIÓN EJECUTIVA',
     imageUrl: 'IMAGESCERO/CEROOFICIAL.png',
     background:'#858585',
-    imageWidth: 400,
-    imageHeight: 400,
+    imageWidth: 200,
+    imageHeight: 200,
   })
   
