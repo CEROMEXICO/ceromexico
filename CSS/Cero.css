@@ -150,10 +150,7 @@ header{
 @media (max-width: 800px){
     header{
 	height: 500px;
-        background-size: 100%;
-        background-position: center;
-        background-image: url(../IMAGESCERO/ad502dd5-6b12-41cd-b5be-6c206cae944d.jpeg);
-        animation: none;
+
     }
 
     .content3t{
