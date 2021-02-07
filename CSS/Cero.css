@@ -56,30 +56,6 @@ width: 100%;
     
 }
 
-@keyframes header{
-    0%, 30% {
-        background-image: url(../IMAGESCERO/ae42f84b-06c7-4d1f-9273-2cc2691d9c4d.png);
-        opacity: 1;
-        
-    }
-    31%, 34% {
-        opacity: 1;
-        
-    }
-    35%, 65% {
-        background-image: url(../IMAGESCERO/CapacitacionCorporativaeInstitucional.jpeg);
-        opacity: 1;
-        
-    }
-    66%, 69% {
-        opacity: 1;
-    }
-    70%, 100% {
-        background-image: url(../IMAGESCERO/e7f93539-ac39-46c9-80ed-a56c2d62c884.jpeg);
-        opacity: 1;
-        
-    }
-}
 
 .content3t{
     width: 100%;
