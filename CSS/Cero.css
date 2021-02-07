@@ -150,6 +150,9 @@ header{
 @media (max-width: 800px){
     header{
         height: 500px;
+	    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     }
     @keyframes header{
         0%, 30% {
