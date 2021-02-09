@@ -59,9 +59,9 @@ header{
 }
 @keyframes movimiento{
     from{
-        background-position: bottom left;
+        background-position: 5px;
     }to{
-        background-position: top right;
+        background-position: -5px;
     }
 }
 
