@@ -90,8 +90,7 @@ header{
     font-size: 80px;
     display: flex;
     text-align: center;
-	background-color: red;
-    
+
 }
 .h1v:before {
 	content: '';
@@ -139,8 +138,7 @@ header{
     }
    
     .content3t{
-        background-color: rgba(0, 0, 0, 0.315);
-        z-index: 1;
+        background-color: rgba(0, 0, 0, 0);
     }
     .sometext1{
         height: 100%;
