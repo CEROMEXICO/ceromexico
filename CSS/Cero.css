@@ -139,7 +139,8 @@ header{
     }
    
     .content3t{
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.315);
+        z-index: 1;
     }
     .sometext1{
         height: 100%;
@@ -348,5 +349,3 @@ footer .redes-footer .fa-whatsapp:hover{
     background: #3cff00;
     transition: all 500ms;
 }
-
-
