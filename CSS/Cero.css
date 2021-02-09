@@ -40,13 +40,15 @@ img{
 }
 
 header{
-width: 100%;
+    width: 100%;
     height: 1000px;
-    background-size: 100%;
+    margin: auto 0 5px 0;
+    background-image: url(../IMAGESCERO/CapacitacionCorporativaeInstitucional.jpeg);
     background-repeat: no-repeat;
+    background-size: 100%;
     background-attachment: fixed;
-    background-position: center center;
-    background-image: url(../IMAGESCERO/ae42f84b-06c7-4d1f-9273-2cc2691d9c4d.png);
+    animation: movimiento 7s infinite linear alternate;  
+
     justify-content: center;
     align-self: center;
     display: flex;
@@ -54,6 +56,13 @@ width: 100%;
     -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
     box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
     
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
 }
 
 
@@ -125,33 +134,8 @@ width: 100%;
 @media (max-width: 800px){
     header{
         height: 500px;
-	    background-image: url(../IMAGESCERO/ad502dd5-6b12-41cd-b5be-6c206cae944d.jpeg);
     }
-    @keyframes header{
-        0%, 30% {
-            background-image: url(../IMAGESCERO/ad502dd5-6b12-41cd-b5be-6c206cae944d.jpeg);
-            opacity: 1;
-            
-        }
-        31%, 34% {
-            opacity: 1;
-            
-        }
-        35%, 65% {
-            background-image: url(../IMAGESCERO/409556de-1753-4cf7-8243-a956ac11d107.jpeg);
-            opacity: 1;
-            
-        }
-        66%, 69% {
-            opacity: 1;
-        }
-        70%, 100% {
-            background-image: url(../IMAGESCERO/ae42f84b-06c7-4d1f-9273-2cc2691d9c4d.jpeg);
-            opacity: 1;
-            
-        }
-    }
-
+   
     .content3t{
         background-color: rgba(0, 0, 0, 0);
     }
