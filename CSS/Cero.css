@@ -204,7 +204,7 @@ header{
         
     }
     35%, 65% {
-        background-image: url(../IMAGESCERO/191298690_1847066432137094_8850161635067720703_n.jpg);
+        background-image: url(../IMAGESCERO/WipeOut51_22_2021_105150.486000.jpg);
         opacity: 1;
         
     }
@@ -212,7 +212,7 @@ header{
         opacity: 1;
     }
     70%, 100% {
-        background-image: url(../IMAGESCERO/122083012_1488830101327198_7507052185434912914_n.jpg);
+        background-image: url(../IMAGESCERO/WipeOut08_15_2021_110831.832000\ \(1\).jpg);
         opacity: 1;
         
     }
@@ -271,7 +271,7 @@ header{
     font-size: 80px;
     display: flex;
     text-align: center;
-
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.24);
     
 }
 .h1v:before {
@@ -364,7 +364,7 @@ ul{
 }
 
 ul li.active a{
-    color: #c8ff00;
+    color: #ffee00;
 }
 
 .links a{
@@ -383,7 +383,7 @@ ul li.active a{
 }
 
 .links a:hover{
-    color: #c8ff00;
+    color: #ffee00;
 }
 
 .container.active .links a{ 
@@ -498,7 +498,7 @@ ul li.active a{
     }
     @keyframes fondo{
         0%, 30% {
-            background-image: url(../IMAGESCERO/SFDI.jpeg);
+            background-image: url(../IMAGESCERO/IMG_14502.jpg);
             opacity: 1;
             
         }
@@ -537,7 +537,7 @@ ul li.active a{
     }
     @keyframes fondot{
         0%, 25% {
-            background-image: url(../IMAGESCERO/SFDI.jpeg);
+            background-image: url(../IMAGESCERO/IMG_14502.jpg);
             opacity: 1;
             
         }
@@ -559,7 +559,6 @@ ul li.active a{
             
         }
     }
-    
     .h1v {
         font-size: 20px;
     }
@@ -584,6 +583,9 @@ ul li.active a{
     .links{
         width: 40%; 
     }
+    .links a{
+        font-size: 1rem; 
+    }
 
 
 
@@ -603,6 +605,7 @@ ul li.active a{
         }
     
         .container.active .shadow.one{
+            opacity: 0;
             animation: shadow-one 0.6s ease-out;
             transform: perspective(1300px) rotateY(20deg) translateY(10px) 
                         translateZ(-205px) scale(0.5);
@@ -623,6 +626,7 @@ ul li.active a{
         }
         
         .container.active .shadow.two{
+            opacity: 0;
             animation: shadow-two 0.6s ease-out;
             transform: perspective(1300px) rotateY(20deg) translateY(10px) 
                     translateZ(75px) scale(0.5);
