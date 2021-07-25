@@ -1,0 +1,249 @@
+
+
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+  background-color: rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(5px);
+}
+.contenedor2 {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+}
+.contenedor3 {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+/* Main */
+.acerca-de{
+  background: linear-gradient(transparent, rgb(0, 0, 0));
+}
+
+.sobre-nosotros {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+
+
+.parrafo {
+  margin: 13px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
+  color: aliceblue;
+}
+
+.acerca-de .boton {
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  font-weight: 300;
+  border: 1px solid rgba(24, 16, 16, .7);
+  color: rgb(24, 16, 16);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.galeria {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../IMAGESCERO/galeria.jpeg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+.pe{
+  background-image: url(../IMAGESCERO/Proteccionejecutiva.jpeg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  width: 90%;
+  height: 500px;
+  margin: 50px auto;
+}
+.target{
+  background-color: rgb(200, 255, 0);
+  width: 50%;
+  height: 250px;
+  margin: auto;
+}
+.miembros{
+  background-image: url(../IMAGESCERO/miembros.jpeg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.cards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 20px 0;
+  width: 30%;
+  height: 250px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.849);
+  backdrop-filter: blur(5px);
+}
+
+.cards img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 100%;
+
+}
+
+.fondo {
+  height: 900px;
+  position: relative;
+  background-image: url(../IMAGESCERO/fondo.jpeg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  overflow: hidden;
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+.titulo-patrocinadores {
+  font-size: 56px;
+  margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 64px;
+}
+
+.clientes {
+  display: flex;
+  margin-bottom: 64px;
+  width: 100%;
+  justify-content: center;
+}
+
+.cliente {
+  width: 50%;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411));
+  backdrop-filter: blur(5px);
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+  .card {
+      width: 48%;
+  }
+  .galeria {
+    height: 700px;
+    background-image: url(../IMAGESCERO/ad502dd5-6b12-41cd-b5be-6c206cae944d.jpeg);
+  }
+  .fondo {
+    height: 200px;
+    background-image: url(../IMAGESCERO/096b804a-953c-4c54-8730-9958373a8624.jpeg);
+
+  }
+  
+  
+}
+
+@media screen and (max-width:610px) {
+  header .textos {
+      margin-top: 130px;
+  }
+
+  header .titulo {
+      font-size: 75px;
+  }
+
+  .none {
+      display: none
+  }
+
+  .imagenes {
+      flex-grow: 1;
+  }
+
+  .card {
+      width: 90%;
+  }
+
+  .fondo {
+      height: auto;
+  }
+
+  .especial {
+      display: none;
+  }
+
+  .cliente {
+      width: 90%;
+      height: 200px;
+      margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  header .textos {
+      margin-top: 100px;
+  }
+
+  header .titulo {
+      font-size: 65px;
+  }
+
+  header .subtitulo {
+      font-size: 25px;
+      margin-bottom: 32px;
+  }
+
+  .sobre-nosotros {
+      font-size: 46px;
+  }
+  .titulo-patrocinadores {
+      font-size: 46px;
+  }
+
+  .subtitulo-patrocinadores {
+      font-size: 20px;
+  }
+}

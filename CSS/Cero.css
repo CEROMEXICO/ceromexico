@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+
+*{
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    overflow: hidden; 
+}
+/*LOADER*/
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 5px solid rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  .loader{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    clip-path: circle(150% at 100% 0);
+    transition: clip-path 1.5s ease-in-out;
+}
+.loader2{
+    clip-path: circle(0% at 50% 50%);
+}
+
+
+/*----LOADER-----*/  
+.container{
+    max-height: 100vh; 
+    width: 100%; 
+    background-color: #00ffff;
+    background-image: linear-gradient(135deg, #000000 0%, #1f1f1f 100%); 
+    transform-style: preserve-3d; 
+    overflow: hidden;
+}
+
+.navbar{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 10;
+    height: 5rem;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.26), rgba(27, 27, 27, 0.137));
+}
+
+.menu{ 
+    max-width: 72rem; 
+    width: 100%; 
+    height: 100%; 
+    margin: 0 auto;
+    padding: 0 2rem; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    color: #fff;
+}
+
+.logo{
+    font-size: 1.8rem; 
+    font-weight: 600; 
+    letter-spacing: 2px; 
+    line-height: 4rem; 
+    margin-top: 20px;
+}
+
+.logo span{ 
+    font-size: 1.8rem; 
+    margin-left: 5px; 
+    color: black;
+    text-shadow: -1.5px 0.5px whitesmoke;
+}
+.cero{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../IMAGESCERO/CEROOFICIAL.png);
+    transition: all 500ms;
+}
+.siio{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../IMAGESCERO/SIIO.png);
+    transition: all 500ms;
+}
+.hamburger-menu{ 
+    height: 4rem; 
+    width: 3rem; 
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+}
+
+.bar{
+    width: 1.9rem; 
+    height: 1.5px; 
+    border-radius: 2px;
+    background-color: #eee; 
+    transition: 0.5s; 
+    position: relative;
+}
+
+.bar::before, 
+.bar::after{ 
+    content: ""; 
+    position: absolute;
+    width: inherit; 
+    height: inherit; 
+    background-color: #eee;
+    transition: 0.5s; 
+}
+
+.bar::before{ 
+    transform: translateY(-9px); 
+}
+.bar::after{ 
+    transform: translateY(9px); 
+}
+
+.main-container{ 
+    overflow: hidden; 
+}
+
+.main{
+    position: relative; 
+    width: 100%; 
+    left: 0; 
+    z-index: 5;
+    overflow: hidden; 
+    transform-origin: left; 
+    transform-style: preserve-3d; 
+    transition: 0.5s;
+}
+
+/*comtent*/
+header{   
+    min-height: 100vh; 
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    animation: fondo 15s infinite; 
+    animation-direction: alternate;
+}
+
+@keyframes fondo{
+    0%, 30% {
+        background-image: url(../IMAGESCERO/SFDI.jpeg);
+        opacity: 1;
+        
+    }
+    31%, 34% {
+        opacity: 1;
+        
+    }
+    35%, 65% {
+        background-image: url(../IMAGESCERO/191298690_1847066432137094_8850161635067720703_n.jpg);
+        opacity: 1;
+        
+    }
+    66%, 69% {
+        opacity: 1;
+    }
+    70%, 100% {
+        background-image: url(../IMAGESCERO/122083012_1488830101327198_7507052185434912914_n.jpg);
+        opacity: 1;
+        
+    }
+}
+
+.logosimg{
+    width: 100%;
+    margin: 85px auto;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    transition: all 500ms;
+}
+.ceroimg{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../IMAGESCERO/CEROOFICIAL.png);
+    display: flex;
+    transition: all 500ms;
+}
+.siioimg{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../IMAGESCERO/SIIO.png);
+    display: flex;
+    transition: all 500ms;
+}
+.content3t{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.411), transparent);
+}
+ 
+.sometext1 {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+.h1v{
+    margin: 20px;
+    font-size: 80px;
+    display: flex;
+    text-align: center;
+
+    
+}
+.h1v:before {
+	content: '';
+    animation: changingTxt1 15s linear infinite;
+    
+}
+
+@keyframes changingTxt1 {
+	0% {
+        content: 'COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES';
+        color: rgb(255, 255, 255);
+        
+	}
+	20% {
+        content: 'COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES';
+        color: rgb(29, 29, 29);
+	}
+	40% {
+        content: 'CERO México';
+        color: rgb(255, 255, 255);
+	}
+	60% {
+        content: 'CERO México';
+        color: rgb(29, 29, 29);
+	}
+	80% {
+        content: 'PROTECCIÓN EJECUTIVA';
+        color: rgb(255, 255, 255);
+	}
+	90% {
+        content: 'PROTECCIÓN EJECUTIVA';
+        color: rgb(29, 29, 29);
+    }
+    100% {
+        content: 'COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES';
+        color: rgb(255, 255, 255);
+	}
+}
+
+
+
+
+
+
+.container.active .bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.container.active .bar::before{ 
+    transform: translateY(0) rotate(45deg);
+}
+
+.container.active .bar::after{
+    transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main{
+    animation: main-animation 0.5s ease; 
+    cursor: pointer;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation{
+    from{ transform: translate(0); }
+    to{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(310px) scale(0.5);
+    }
+}
+
+.links{
+    position: absolute; 
+    width: 30%; 
+    right: 0; 
+    top: 0; 
+    height: 100vh; 
+    z-index: 2; 
+    overflow: hidden;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li.active a{
+    color: #c8ff00;
+}
+
+.links a{
+    text-decoration: none; 
+    color: #eee; 
+    padding: 0.7rem 0;
+    display: inline-block; 
+    font-size: 1.8rem; 
+    font-weight: 300;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    transition: 0.3s;
+    opacity: 0; 
+    transform: translateY(10px);
+    animation: hide 0.5s forwards ease;
+}
+
+.links a:hover{
+    color: #c8ff00;
+}
+
+.container.active .links a{ 
+    animation: appear 0.5s forwards ease var(--i);
+}
+
+@keyframes appear{
+    from {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    to{ 
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+
+@keyframes hide{
+    from{
+        opacity: 1; 
+        transform: translateY(0px);
+    }
+    to{ 
+        opacity: 0; 
+        transform: translateY(10px);
+    }
+}
+
+.shadow{
+    position: absolute; 
+    width: 100%; 
+    height: 100vh; 
+    top: 0;
+    left: 0; 
+    transform-style: preserve-3d; 
+    transform-origin:left;
+    transition: 0.5s; 
+    background-color: #fff;
+}
+
+.shadow.one{
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.shadow.two{
+    z-index: -2;
+    opacity: 0.1;
+}
+
+.container.active .shadow.one{
+    animation: shadow-one 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(215px) scale(0.5);
+}
+
+@keyframes shadow-one{
+    0%{
+        transform: translate(0);
+    }
+    5%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(215px) scale(0.5);
+    }
+}
+
+.container.active .shadow.two{
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+            translateZ(120px) scale(0.5);
+}
+
+@keyframes shadow-two{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                translateZ(120px) scale(0.5);
+    }
+}
+
+.container.active .main:hover + .shadow.one{
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+            translateZ(230px) scale(0.5);
+}
+.container.active .main:hover{
+    transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+            translateZ(340px) scale(0.5);
+}
+
+
+
+
+
+@media (max-width:800px){
+
+    header{
+        height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    @keyframes fondo{
+        0%, 30% {
+            background-image: url(../IMAGESCERO/SFDI.jpeg);
+            opacity: 1;
+            
+        }
+        31%, 34% {
+            opacity: 1;
+            
+        }
+        35%, 65% {
+            background-image: url(../IMAGESCERO/e7f93539-ac39-46c9-80ed-a56c2d62c884.jpeg);
+            opacity: 1;
+            
+        }
+        66%, 69% {
+            opacity: 1;
+        }
+        70%, 100% {
+            background-image: url(../IMAGESCERO/Bestia.jpg);
+            opacity: 1;
+            
+        }
+    }
+    .h1v:before {
+        content: 'Cero México';
+        animation: none;
+        font-weight: 800;
+        font-size: 100px;
+        text-align: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        animation: fondot 15s infinite; 
+        animation-direction: alternate;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    @keyframes fondot{
+        0%, 25% {
+            background-image: url(../IMAGESCERO/SFDI.jpeg);
+            opacity: 1;
+            
+        }
+        26%, 34% {
+            opacity: 1;
+            
+        }
+        35%, 60% {
+            background-image: url(../IMAGESCERO/e7f93539-ac39-46c9-80ed-a56c2d62c884.jpeg);
+            opacity: 1;
+            
+        }
+        61%, 69% {
+            opacity: 1;
+        }
+        70%, 100% {
+            background-image: url(../IMAGESCERO/Bestia.jpg);
+            opacity: 1;
+            
+        }
+    }
+    
+    .h1v {
+        font-size: 20px;
+    }
+    .sometext1 {
+        align-items: center;
+
+    }
+
+    .logosimg{
+        opacity: 1;
+        transition: all 500ms;
+    }
+    .cero{
+        opacity: 0;
+        transition: all 500ms;
+    }
+
+    .siio{
+        opacity: 0;
+        transition: all 500ms;
+    }
+    .links{
+        width: 40%; 
+    }
+
+
+
+        .container.active .main{
+            animation: main-animation 0.5s ease; 
+            cursor: pointer;
+            transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                        translateZ(75px) scale(0.5);
+        }
+        
+        @keyframes main-animation{
+            from{ transform: translate(0); }
+            to{
+                transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                            translateZ(75px) scale(0.5);
+            }
+        }
+    
+        .container.active .shadow.one{
+            animation: shadow-one 0.6s ease-out;
+            transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                        translateZ(-205px) scale(0.5);
+        }
+        
+        @keyframes shadow-one{
+            0%{
+                transform: translate(0);
+            }
+            5%{
+                transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                        translateZ(75px) scale(0.5);
+            }
+            100%{
+                transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                        translateZ(-205px) scale(0.5);
+            }
+        }
+        
+        .container.active .shadow.two{
+            animation: shadow-two 0.6s ease-out;
+            transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(75px) scale(0.5);
+        }
+        
+        @keyframes shadow-two{
+            0%{
+                transform: translate(0);
+            }
+            20%{
+                transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                        translateZ(75px) scale(0.5);
+            }
+            100%{
+                transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                        translateZ(75px) scale(0.5);
+            }
+        }
+        
+        .container.active .main:hover + .shadow.one{
+            transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(75px) scale(0.5);
+        }
+        .container.active .main:hover{
+            transform: perspective(1300px) rotateY(20deg) translateY(10px) 
+                    translateZ(75px) scale(0.5);
+        }
+    }
+    
+    
+
+
