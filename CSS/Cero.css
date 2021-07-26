@@ -257,6 +257,7 @@ header{
 }
 .cd a{
     color: #000;
+    text-shadow: 1px 1px whitesmoke;
     font-size: 1rem;
 }
 .content3t{
