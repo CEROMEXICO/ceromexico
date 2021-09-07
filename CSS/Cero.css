@@ -405,7 +405,8 @@ ul li.active a{
     }
     @keyframes fondo{
         0%, 30% {
-            background-image: url(../IMAGESCERO/IMG_14502.jpg);
+            background-image: url(../IMAGESCERO/CEROM.jpeg);
+            
             opacity: 1;
             
         }
@@ -414,7 +415,7 @@ ul li.active a{
             
         }
         35%, 65% {
-            background-image: url(../IMAGESCERO/e7f93539-ac39-46c9-80ed-a56c2d62c884.jpeg);
+            background-image: url(../IMAGESCERO/IMG_14502.jpg);
             opacity: 1;
             
         }
@@ -422,7 +423,7 @@ ul li.active a{
             opacity: 1;
         }
         70%, 100% {
-            background-image: url(../IMAGESCERO/Bestia.jpg);
+            background-image: url(../IMAGESCERO/CEROME.jpeg);
             opacity: 1;
             
         }
@@ -444,7 +445,7 @@ ul li.active a{
     }
     @keyframes fondot{
         0%, 25% {
-            background-image: url(../IMAGESCERO/IMG_14502.jpg);
+            background-image: url(../IMAGESCERO/CEROM.jpeg);
             opacity: 1;
             
         }
@@ -453,7 +454,7 @@ ul li.active a{
             
         }
         35%, 60% {
-            background-image: url(../IMAGESCERO/e7f93539-ac39-46c9-80ed-a56c2d62c884.jpeg);
+            background-image: url(../IMAGESCERO/IMG_14502.jpg);
             opacity: 1;
             
         }
@@ -461,7 +462,7 @@ ul li.active a{
             opacity: 1;
         }
         70%, 100% {
-            background-image: url(../IMAGESCERO/Bestia.jpg);
+            background-image: url(../IMAGESCERO/CEROME.jpeg);
             opacity: 1;
             
         }
