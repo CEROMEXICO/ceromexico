@@ -25,7 +25,7 @@ header{
 
 
     animation-name: test;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
@@ -41,9 +41,22 @@ header{
     0% {
       background-image: url(https://i.postimg.cc/XJWhmt0N/Background-CERO-one.jpg);
     }
-
-    100% {
+    20% {
       background-image: url(https://i.postimg.cc/fbmpHDpg/Background-CERO-two.jpg);
+    }
+
+    40% {
+      background-image: url(https://i.postimg.cc/0rR15n6c/Bestia.jpg);
+    }
+    60% {
+      background-image: url(https://i.postimg.cc/xCZShn9r/SFDI.jpg);
+    }
+
+    80% {
+      background-image: url(https://i.postimg.cc/15wfGYKR/campo.jpg);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/XJWhmt0N/Background-CERO-one.jpg);
     }
   }
   /*--===== GLOBAL =====--*/
