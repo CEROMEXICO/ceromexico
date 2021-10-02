@@ -1,0 +1,107 @@
+/*Footer - pie de pagina*/
+
+.container-footer{
+    width: 100%;
+    height: auto;
+    margin: 450px auto;
+    
+}
+footer{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    display: block ;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+.logo-footer{
+    max-width: 500px;
+    width: 100%;
+    height: 105px;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.cero{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(https://i.postimg.cc/RZ731LJf/CEROOFICIAL.png);
+    transition: all 500ms;
+}
+.siio{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(https://i.postimg.cc/bw2x7T8s/SIIO.png);
+    transition: all 500ms;
+}
+.redes-footer{
+    width: 75%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;    
+    border: 0;
+    margin: auto;
+    background: linear-gradient(90deg, rgb(119, 0, 255), rgb(255, 4, 4));
+}
+.text-footer{
+    margin: 20px auto;
+    color: lavender;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*Footer - REDES*/
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    color: #233305cc;
+    background: #efefef;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all 500ms;
+}
+
+footer .redes-footer .fa-facebook-f:hover{
+    color: #fff;
+    background: #0073f7;
+    transition: all 500ms;
+}
+
+footer .redes-footer .fa-envelope:hover{
+    color: #fff;
+    background: #DE4C34;
+    transition: all 500ms;
+}
+
+footer .redes-footer .fa-whatsapp:hover{
+    color: #fff;
+    background: #3cff00;
+    transition: all 500ms;
+}
+
+@media (max-width:800px){
+    .container-footer{
+        margin: 200px auto;
+        
+    }
+}
+
+

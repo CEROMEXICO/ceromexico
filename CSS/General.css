@@ -1,0 +1,70 @@
+/*--===== GLOBAL =====--*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden; 
+}
+
+
+.header{   
+    width: 100%;
+    height: 100vh; 
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+
+    animation-name: test;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+    justify-content: center;
+    align-self: center;
+    display: flex;
+
+    
+}
+
+@keyframes test {
+    0% {
+      background-image: url(https://i.postimg.cc/K896WmGZ/ceroajustado.png);
+    }
+    20% {
+      background-image: url(https://i.postimg.cc/fbmpHDpg/Background-CERO-two.jpg);
+    }
+
+    40% {
+      background-image: url(https://i.postimg.cc/0rR15n6c/Bestia.jpg);
+    }
+    60% {
+      background-image: url(https://i.postimg.cc/xCZShn9r/SFDI.jpg);
+    }
+
+    80% {
+      background-image: url(https://i.postimg.cc/15wfGYKR/campo.jpg);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/XJWhmt0N/Background-CERO-one.jpg);
+    }
+  }
+
+  /*--===== GLOBAL =====--*/
+  @media (max-width:800px){
+
+    header{   
+      background-size: 100%;
+  }
+
+  }

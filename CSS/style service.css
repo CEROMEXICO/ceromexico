@@ -1,0 +1,98 @@
+/*--===== CONTENT =====-*/
+.service {
+    width: 900px;
+    height: auto;
+    
+    padding: 150px;
+    margin: 80px auto;
+
+    color: rgb(255, 255, 255);
+
+    border-radius: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.589);
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .service-text{
+    width: 100%;
+    height: auto;
+
+  }
+
+  .span {
+	  display: block;
+
+
+/* Clip Background Image */
+
+	  background: url(https://i.postimg.cc/RZ731LJf/CEROOFICIAL.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+/* Animate Background Image */
+
+  .sobre-nosotros {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .parrafos{
+    margin: 5px auto;
+
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-style: dotted;
+    
+  }
+
+  
+  .parrafo {
+    margin: 5px auto;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  
+  @media (max-width:800px){
+    .service {
+      width: 95%;
+      height: auto;
+
+      padding: 25px 0;
+      margin: 80px auto;
+      
+      border-radius: 0%;
+    }
+    .sobre-nosotros {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+}
