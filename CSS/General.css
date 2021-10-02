@@ -64,7 +64,32 @@ body{
   @media (max-width:800px){
 
     header{   
-      background-size: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center; 
+  }
+  @keyframes test {
+    0% {
+      background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
+    }
+    20% {
+      background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
+    }
+  
+    40% {
+      background-image: url(https://i.postimg.cc/0rR15n6c/Bestia.jpg);
+    }
+    60% {
+      background-image: url(https://i.postimg.cc/xCZShn9r/SFDI.jpg);
+    }
+  
+    80% {
+      background-image: url(https://i.postimg.cc/15wfGYKR/campo.jpg);
+    }
+    100% {
+      background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
+    }
   }
 
   }
