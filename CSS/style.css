@@ -133,9 +133,11 @@ header{
     background-attachment: fixed;
     background-position: center center; 
 }
-    .h1v {
-        font-size: 3rem;
-    }
+.h1v:before {
+	content: '';
+    animation: none;
+
+}
 
 }
     
