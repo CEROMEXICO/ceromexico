@@ -15,6 +15,7 @@
 }
 img{
     width: 100%;
+    margin: auto;
 }
 .img{
     width: 350px;
@@ -22,9 +23,8 @@ img{
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.534);
     box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
-    justify-content: center;
-    align-items: center;
-    display: inline-flexbox;
+
+    
 }
 .card{
     margin: 5px auto;
@@ -39,7 +39,15 @@ img{
         margin: 90px auto;
     }
     .img{
-        width: 250px;
+        width: 300px;
         margin: 5px auto;
+
+        justify-content: space-between;
+    align-items: center;
+    display: flex;
+    }
+    img{
+        width: 50%;
+        
     }
 }
