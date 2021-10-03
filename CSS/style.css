@@ -24,7 +24,7 @@ header{
 
 
     animation-name: test;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
@@ -136,23 +136,28 @@ header{
 @keyframes test {
   0% {
     background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
+    
   }
   20% {
-    background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
+    background-image: url(https://i.postimg.cc/RhhhdwRw/MOVIL-OFICIAL-METOPA.png);
+    
   }
 
   40% {
-    background-image: url(https://i.postimg.cc/G2y1BWbR/CEROMEXICO-B.png);
+    background-image: url(https://i.postimg.cc/hPCWg9Mk/CEROMEXICO-BF.png);
+    
   }
   60% {
-    background-image: url(https://i.postimg.cc/VNT8kfQ4/CEROMEXICO-SFDI.png);
+    background-image: url(https://i.postimg.cc/mgtxrt5t/CEROMEXICO-BFF.png);
+    
   }
 
   80% {
     background-image: url(https://i.postimg.cc/253YYqJV/CEROMEXICO-ADIESTRAMIENTO.png);
+    
   }
   100% {
-    background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
+    background-image: url(https://i.postimg.cc/CLwfBfkM/CEROMEXICO-SFDI-responsive.png);
   }
 }
 .h1v:before {
