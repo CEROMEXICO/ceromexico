@@ -15,157 +15,107 @@ body{
 /*comtent*/
 header{   
     width: 100%;
-    height: 100vh; 
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-
-
-    animation-name: test;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-
-    justify-content: center;
-    align-self: center;
-    display: flex;
-
-    
-}
-
-@keyframes test {
-    0% {
-      background-image: url(https://i.postimg.cc/K896WmGZ/ceroajustado.png);
-    }
-    20% {
-      background-image: url(https://i.postimg.cc/fbmpHDpg/Background-CERO-two.jpg);
-    }
-
-    40% {
-      background-image: url(https://i.postimg.cc/G2y1BWbR/CEROMEXICO-B.png);
-    }
-    60% {
-      background-image: url(https://i.postimg.cc/VNT8kfQ4/CEROMEXICO-SFDI.png);
-    }
-
-    80% {
-      background-image: url(https://i.postimg.cc/253YYqJV/CEROMEXICO-ADIESTRAMIENTO.png);
-    }
-    100% {
-      background-image: url(https://i.postimg.cc/XJWhmt0N/Background-CERO-one.jpg);
-    }
-  }
-  /*--===== GLOBAL =====--*/
-  
-.text-animation{
-    width: 100%;
+    height: 100vh;  
+    position: relative;  
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-.sometext1 {
-    mix-blend-mode: multiply;
-}
-.h1v{
-    font-size: 80px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0),
-		0 0 0.2em rgb(0, 0, 0)
-    
-}
-.h1v:before {
-	content: '';
-    animation: changingTxt;
-
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    
 }
 
-@keyframes changingTxt{
-	0% {
-        content: 'COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES';
+  /*--===== GLOBAL =====--*/
+    /*--===== VIDEO and Animation =====--*/
+  video{
+    width: 100%;
+    position: absolute;
+  }
+.text-animation{
+    width: 90%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        
-	}
-	20% {
-        content: 'COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES';
+    position: absolute;
+    z-index: 100;
+}
+.animation_text {
+  display:inline-block;
+  width: auto;
+  overflow:hidden;
 
-	}
-	40% {
-        content: 'CERO México';
-
-	}
-	60% {
-        content: 'CERO México';
-
-	}
-	80% {
-        content: 'PROTECCIÓN EJECUTIVA';
-	}
-	90% {
-        content: 'PROTECCIÓN EJECUTIVA';
-
-    }
-    100% {
-        content: 'COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES';
-	}
+  font-weight:300;
+  font-size:3rem;
 }
 
+.animation_text:first-of-type {
+  animation: showup 15s infinite;
+}
 
+.animation_text:last-of-type {
+  width:0px;
+  animation: reveal 15s infinite;
+}
 
+.animation_text:last-of-type .span {
+  margin-left:-355px;
+  animation: slidein 15s infinite;
+  font-size: 2.3rem;
+}
 
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
 
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+/*--===== VIDEO and Animation =====--*/
 @media (max-width:800px){
-
-  header{   
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center; 
+  .text-animation{
+    align-items: flex-end;
+    justify-content: space-between;
 }
-@keyframes test {
-  0% {
-    background-image: url(https://i.postimg.cc/nzdwhCfP/MOVIL-OFICIAL.png);
-    
-  }
-  20% {
-    background-image: url(https://i.postimg.cc/RhhhdwRw/MOVIL-OFICIAL-METOPA.png);
-    
-  }
-
-  40% {
-    background-image: url(https://i.postimg.cc/hPCWg9Mk/CEROMEXICO-BF.png);
-    
-  }
-  60% {
-    background-image: url(https://i.postimg.cc/mgtxrt5t/CEROMEXICO-BFF.png);
-    
-  }
-
-  80% {
-    background-image: url(https://i.postimg.cc/253YYqJV/CEROMEXICO-ADIESTRAMIENTO.png);
-    
-  }
-  100% {
-    background-image: url(https://i.postimg.cc/CLwfBfkM/CEROMEXICO-SFDI-responsive.png);
-  }
+  .text-animation{
+    width: 98%;
 }
-.h1v:before {
-	content: '';
-    animation: none;
-
+  .animation_text {
+    font-size:1rem;
+  }
+  
+  .animation_text:last-of-type .span {
+    margin-left:500px;
+    font-size: 1rem;
+  }
+  @keyframes slidein {
+    0% { margin-left:-1500px; }
+    20% { margin-left:-1500px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
 }
 
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:88px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:90px;}
+}
 }
     
     
