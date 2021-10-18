@@ -1,7 +1,7 @@
 /*--===== CONTENT =====-*/
 .service {
     width: 900px;
-    height: auto;
+    height: 900px;
     
     padding: 150px;
     margin: 80px auto;
@@ -12,6 +12,7 @@
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.589);
 
+    
     justify-content: center;
     align-items: center;
     display: flex;
