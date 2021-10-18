@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
+
+    z-index: 100;
   }
   .service-text{
     width: 100%;
