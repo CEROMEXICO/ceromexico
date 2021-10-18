@@ -95,7 +95,7 @@ header{
     width: 98%;
 }
   .animation_text {
-    font-size:1rem;
+    font-size:.9rem;
   }
   
   .animation_text:last-of-type .span {
