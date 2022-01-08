@@ -1,0 +1,358 @@
+/*--===== GLOBAL =====--*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+/*--------------TYPE---------------*/
+
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    background: var(--second-color);
+}
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: var(--first-color);
+    border-radius: 70px;
+}
+
+body{
+    color:var(--text-color);
+	background-color: var(--bg-color);
+	
+    font-family: var(--body-font);
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+:root{
+    --first-color: #ECC858;
+    --second-color: black;
+    --third-color: aliceblue;
+    --fourth-color: transparent;
+    --sm: red;
+    --sm-t: rgb(255, 102, 0);
+
+    --sky: black;
+    --sky-two: linear-gradient(90deg, var(--second-color) 0%,  var(--fourth-color) 100%);
+
+    --body-font:'Quicksand', sans-serif;
+
+    --absolute: absolute;
+    --relative: relative;
+
+    --flex: flex;
+    --center: center;
+    --space-around: space-around;
+    --space-between: space-between;
+    --flex-end: flex-end;
+
+    --overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+
+
+    /*--===== VIDEO and Animation =====--*/
+
+
+  
+  .video{
+    width: 100%;
+    height: 100vh;
+
+
+
+    justify-content: center;
+  align-items: center;
+  display: flex;
+    z-index: 1;
+  }
+  
+  video{
+    width: 90%;
+  }
+  .protection{
+    width: 100%;
+    height: 100vh;
+  
+    
+    background: rgb(2,0,36);
+background: radial-gradient(circle, 
+rgba(2,0,36,1) 0%, 
+rgba(9, 9, 121, 0) 0%, 
+rgb(0, 0, 0) 70%);
+
+
+
+
+    position: absolute;
+   z-index: 2;
+  }
+  
+
+/*--===== CONTENT =====-*/
+
+section{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.service {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+
+
+
+  backdrop-filter: blur(5px);
+
+
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  z-index: 100;
+
+  position: absolute;
+}
+.service-text{
+  width: 90%;
+  height: auto;
+
+}
+
+
+.sobre-nosotros {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.parrafos{
+  margin: 5px auto;
+
+  font-weight: 600;
+  line-height: 24px;
+  
+  text-transform: uppercase;
+  text-decoration-style: dotted;
+  
+}
+
+
+.parrafo {
+  margin: 5px 30px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+
+
+
+footer{
+  width: 100%;
+  height: auto;
+padding: 15px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.text-footer{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.logo-footer{
+  width: 50%;
+  height: auto;
+
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+
+}
+.imglogo{
+  width: 150px;
+  height: 150px;
+}
+img{
+  width: 95%;
+}
+.sp{
+  width: 50%;
+  height: 5px;
+
+  background-color: var(--bg-color-secundary);
+margin: 10px;
+  border-radius: 5px;
+}
+.redes-footer{
+  width: 30%;
+  height: 50px;
+  font-size: 1rem;
+
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+
+
+
+
+
+
+/* ===== MEDIA  ===== */
+
+
+
+
+
+@media (prefers-color-scheme: dark){
+	:root{
+		--bg-color: #000;
+        --bg-color-secundary: whitesmoke;
+		--text-color: #fff;
+	}
+
+}
+@media (prefers-color-scheme: light){
+	:root{
+		--bg-color: #fff;
+    --bg-color-secundary: black;
+		--text-color: #000;
+	}
+}
+
+
+@media (max-width:800px){
+
+
+  .protection{
+    width: 100%;
+    height: 100vh;
+  
+    
+    background: rgb(2,0,36);
+background: radial-gradient(circle, 
+rgba(2,0,36,1) 0%, 
+rgba(9, 9, 121, 0) 0%, 
+rgb(0, 0, 0) 27.5%);
+
+
+
+
+    position: absolute;
+   z-index: 2;
+
+
+  }
+  .service {
+    width: 100%;
+    height: 100vh;
+    
+
+ 
+    backdrop-filter: blur(5px);
+
+
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    position: absolute;
+    z-index: 100;
+  }
+  .sobre-nosotros {
+    font-size: .7rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .parrafos{
+
+    font-size: .7rem;
+    margin: 5px auto;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  
+  .parrafo {
+
+    font-size: .7rem;
+    margin: 5px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+
+  .text-footer{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .logo-footer{
+    width: 90%;
+    height: auto;
+  
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  
+  }
+  .imglogo{
+    width: 50px;
+    height: 50px;
+  }
+  img{
+    width: 95%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
