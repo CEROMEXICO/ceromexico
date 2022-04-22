@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden; 
+    background: black;
+}
+
+
+header{   
+    width: 100%;
+    height: 100vh;  
+
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  video{
+    width: 85%;
+position: absolute;
+
+  }
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+
+background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 50%);
+z-index: 5;
+}
+
+  
+/*--===== RESPONSIVE =====--*/
+@media (max-width:800px){
+    video{
+        width: 150%;
+    }
+    .capa{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, black 40%);
+    }
+}
+    
+    
+
+
