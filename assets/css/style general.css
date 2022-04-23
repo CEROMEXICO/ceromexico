@@ -35,7 +35,7 @@ section {
     border-radius: 50px;
 
     position: absolute;
-    bottom: -5px;
+    bottom: 0px;
 }
 
 
@@ -131,7 +131,7 @@ section {
 
 
 
-
+/* ==================== SERVICIOS ==================== */
 .servicios{
     height: 60vh;
 
@@ -142,10 +142,10 @@ section {
 .max{
     max-width: 70%;
 }
-/* teams section styling */
+
 
  .carousel .card{
-     width: 400px;
+     width: 100%;
     height: 500px;
 
     overflow: hidden;
@@ -187,7 +187,7 @@ section {
     background-image: url(../img/Home/consultoria.jpeg);
 }
  .carousel .card .text{
-     width: 100%;
+     width: 90%;
      padding: 10px 0;
     font-size: 1rem;
     font-weight: bold;
@@ -205,8 +205,8 @@ section {
     margin-top: 20px;
 }
 .owl-dot{
-    height: 13px;
-    width: 13px;
+    height: 5px;
+    width: 5px;
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
@@ -224,11 +224,7 @@ section {
 
 /* responsive media query start */
 
-@media (max-width: 991px) {
-    .max-width{
-        padding: 0 50px;
-    }
-}
+
 
 /* r-------------------------------------------------------------------------------------------- */
 .direccion {
@@ -243,7 +239,6 @@ section {
     align-items: center;
     display: flex;
 }
-
 
 
 .swiper {
@@ -322,15 +317,12 @@ section {
 
 
 
-
     .swiper {
         width: 90%;
         height: 60vh;
     }
     
     .swiper-slide {
-        width: 100%;
-        height: 100%;
 
         font-size: 1rem;
     }
