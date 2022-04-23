@@ -27,6 +27,12 @@
 
     <!--===== Slide =====-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--===== Slide Servicios =====-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
     <!--===== LIBRERIAS =====-->
 </head>
 
@@ -43,7 +49,7 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#Home" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#Home" class="nav__link activem">Inicio</a></li>
                     <li class="nav__item"><a href="#Fecha" class="nav__link">Nosotros</a></li>
                     <li class="nav__item"><a href="#Galeria" class="nav__link">Servicios</a></li>
                     <li class="nav__item"><a href="#Padrinos" class="nav__link">Cursos</a></li>
@@ -75,23 +81,99 @@
     <div class="division">
         <div class="div_text">· Nosotros ·</div>
     </div>
-
-    <section id="Nosotros" class="nosotros">
-        <div class="nosotros-img"></div>
-        <div class="nosotros-text">
-             Comando Especial de Reacción y Operaciones
+    
+    <section id="Cursos" class="description">
+        <div class="description-text">
+            COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES
         </div>
-        
+        <div class="img-nosotros"></div>
+    
     </section>
     <!--==================== NOSOTROS ====================-->
+
+
+
+        <!--==================== SERVICIOS ====================-->
+        <div class="division">
+            <div class="div_text">· SERVICIOS ·</div>
+        </div>
+        
+        <section id="Servicios" class="servicios">
+            <div class="max">
+                        
+        
+        
+            <div class="carousel owl-carousel">
+        
+                <div class="card">
+                    <div class="box services-imgone">
+                        <div class="text">
+                            EXECUTIVE CLOSE PROTECTION
+                            <p>Operaciones Especiales.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box services-imgtwo">
+                        <div class="text">
+                            MEDIDAS DE PROTECCIÓN Y SEGURIDAD INTEGRAL
+                            <p>Protección a Funcionarios.</p>
+                            <p>Protección a Empresarios.</p>
+                            <p>Proteccion VIP.</p>
+                            <p>
+                                Ética, Experiencia, Profesionalismo y Confianza en Protección Ejecutiva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box services-imgthree">
+                        <div class="text">
+                            SEGURIDAD FISICA DE INSTALACIONES
+                            <p>Loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box services-imgfour">
+                        <div class="text">
+                            CAPACITACIÓN CORPORATIVA, INSTITUCIONAL Y DE PERSONAL TRABAJO OBJETIVO EN MATERIA DE SEGURIDAD, PROTECCIÓN INTEGRAL.
+                            <p>Executive Close Protection Agents Filtros Operativos de Selección de Agentes Confiables.</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="card">
+                    <div class="box services-imgfive">
+                        <div class="text">
+                            CONSULTORIA DE GRADO MILITAR.
+                            <p>Dirección, Coordinación y Supervisión Operativa para Empresas de Seguridad 
+                                y Protección Ejecutiva, Filtros y Selección de Personal.</p>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+            </div>
+        </section>
+        <!--==================== SERVICIOS ====================-->
+
+
+
+
+
 
     <!--==================== CURSOS ====================-->
     <div class="division">
         <div class="div_text">· CURSOS ·</div>
     </div>
     
-    <section id="Cursos" class="cursos">
-        <div class="cursos-text">
+    <section id="Cursos" class="description">
+        <div class="description-text">
             <ul>
                 <p>CURSOS</p>
     
@@ -113,7 +195,7 @@
                     Protección Ejecutiva. Filtros y Selección de Personal.</li>
             </ul>
         </div>
-        <div class="cursos-img"></div>
+        <div class="img-cursos"></div>
     
     </section>
     <!--==================== CURSOS ====================-->
@@ -185,6 +267,35 @@
             },
         });
     </script>
+
+
+<!-- SERVICES -->
+<script>
+    
+    
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
+    });
+
+</script>
 </body>
 
 </html>

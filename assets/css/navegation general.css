@@ -117,7 +117,7 @@ header.abajo{
 }
 
 /*Active menu*/
-.active::after{
+.activem::after{
     position: absolute;
     content: "";
     width: 100%;

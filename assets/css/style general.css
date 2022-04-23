@@ -2,8 +2,6 @@ section {
     width: 100%;
     height: 100vh;
 
-
-
 }
 
 .division {
@@ -42,7 +40,7 @@ section {
 
 
 .home {
-    background-image: url(../img/Home/CERO.jpg);
+    background-image: url(../img/Home/Background\ CERO\ two.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -50,53 +48,15 @@ section {
 
 
 /*==================== NOSOTROS ====================*/
-.nosotros,
-.nosotros-text{
-    height: 60vh;
-    padding: 20px;
 
-    position: relative;
-   justify-content: center;
-   align-items: center;
-   display: flex;
-overflow: hidden;
-}
-
-.nosotros-text{
-    width: 500px;
-    height: 400px;
-
-    color: white;
-    font-weight: bold;
-   
-    
-    border: 5px inset white;
-
-    position: absolute;
-
-    background: rgba(255,255,255,0);
--webkit-backdrop-filter: blur(3px);
-backdrop-filter: blur(3px);
-
-}
-
-.nosotros-img{
-    width: 400px;
-    height: 300px;
-
-
-    background-image: url(../img/Home/Nosotros.jpg);
-    background-size: cover;
-position: absolute;
-
-margin-left: 700px;
-
-}
 
 /*==================== CURSOS ====================*/
-.cursos{
-    height: 60vh;
-    padding: 20px;
+.description{
+    height: auto;
+    min-height: 40vh;
+    padding: 40px 10px;
+
+    background: #001d29;
 
     position: relative;
    justify-content: center;
@@ -106,25 +66,28 @@ margin-left: 700px;
    overflow: hidden;
 }
 
-.cursos-text{
-    width: 500px;
-    height: 500px;
+.description-text{
+    width: auto;
+    max-width: 500px;
+    height: auto;
 
-    padding: 20px 40px;
+    padding: 40px;
     color: white;
     font-weight: bold;
    
-    background: rgba(0, 0, 0, 0.438);
-    
-    border: 5px inset white;
+  
+    background: #001d29d5;
+    box-shadow:  5px 5px 10px #000c10,
+                 -5px -5px 10px #002e42;
+                 -webkit-backdrop-filter: blur(5px);
+                 backdrop-filter: blur(5px);
 
-    position: absolute;
     justify-content: center;
     align-items: center;
     display: flex;
     z-index: 5;
 }
-.cursos-text p{
+.description-text p{
     margin: 30px auto;
     text-align: center;
     text-transform: uppercase;
@@ -135,37 +98,141 @@ margin-left: 700px;
     display: flex;
 }
 
-.cursos-text p::before{
+.description-text p::before{
     content: '';
     width: 50px;
     height: 3px;
+    border-radius: 50px;
     background: white;   
     position: absolute; 
     bottom: -5px;
 }
-.cursos-img{
+
+.img-nosotros, 
+.img-cursos{
     width: 400px;
     height: 300px;
 
-
-    background-image: url(../img/Home/Nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 
     position: absolute;
+}
+.img-nosotros{
+    background-image: url(../img/Home/Bestia.jpg);
     margin-left: 700px;
+    
+}
+.img-cursos{
+    background-image: url(../img/Home/Nosotros.jpg);
+    margin-right: 700px;
 }
 
 
 
 
+.servicios{
+    height: 60vh;
 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.max{
+    max-width: 70%;
+}
+/* teams section styling */
 
+ .carousel .card{
+     width: 400px;
+    height: 500px;
 
+    overflow: hidden;
 
+}
 
+ .carousel .card .box{
+     width: 100%;
+    height: 100%;
 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.services-imgone,
+.services-imgtwo,
+.services-imgthree,
+.services-imgfour,
+.services-imgfive{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.services-imgone{
+    background-image: url(../img/Home/agent.jpeg);
+}
+
+.services-imgtwo{
+    background-image: url(../img/Home/Bestia.jpg);
+}
+.services-imgthree{
+    background-image: url(../img/Home/instalaciones.png);
+}
+.services-imgfour{
+    background-image: url(../img/Home/Nosotros.jpg);
+}
+.services-imgfive{
+    background-image: url(../img/Home/consultoria.jpeg);
+}
+ .carousel .card .text{
+     width: 100%;
+     padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.699);
+
+}
+.text p{
+    font-weight: normal;
+    margin: 5px auto;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid white!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: white!important;
+}
+
+/* responsive media query start */
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+/* r-------------------------------------------------------------------------------------------- */
 .direccion {
-    background-image: url(../img/Home/CEROMEXICO\ SFDI.png);
+    background-image: url(../img/Home/WipeOut08_15_2021_110831.832000\ \(1\).jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -194,7 +261,7 @@ margin-left: 700px;
     
     background: rgba(0, 0, 0, 0.5);
 
-    border: 5px double black;
+    border: 5px double beige;
 
     justify-content: center;
     align-items: center;
@@ -232,56 +299,29 @@ margin-left: 700px;
     height: 100%;
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, black 50%);
 }
-    .nosotros-text{
-        width: 300px;
 
-        background: rgba(0, 0, 0, 0.315);
-        text-align: center;
-        left: 20px;
-    }
+
+
+.img-nosotros{
+    background-image: url(../img/Home/Bestia.jpg);
+    margin-left: 0px;
     
-    .nosotros-img{
-        width: 90%;
-        height: 300px;
-    margin-left: 200px;
-    
-    }
+}
+.img-cursos{
+    background-image: url(../img/Home/Nosotros.jpg);
+    margin-right: 0px;
+}
 
-    .cursos{
-        height: 80vh;
-        padding: 20px;
-    
-        position: relative;
-       justify-content: center;
-       align-items: center;
-       display: flex;
-    
-       overflow: hidden;
-    }
-    .cursos-text{
-        width: 90%;
-        height: 500px;
-    
-        padding: 40px;
 
-        background: rgba(0, 0, 0, 0.801);
-        right: 15px;
-    }
-
-    .cursos-img{
-        width: 400px;
-        height: 300px;
-
-        position: absolute;
-        margin-left: -200px;
-    }
+.servicios{
+    margin: 90px auto;
+}
+.max{
+    max-width: 90%;
+}
 
 
 
-
-    .direccion {
-        background-position: -320px;
-    }
 
     .swiper {
         width: 90%;
