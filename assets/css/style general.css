@@ -1,0 +1,301 @@
+section {
+    width: 100%;
+    height: 100vh;
+
+
+
+}
+
+.division {
+    width: 100%;
+    height: 100px;
+
+    margin: 20px auto;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.div_text {
+    color: var(--white);
+    font-size: 3rem;
+
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.div_text::before {
+    content: '';
+
+    width: 150px;
+    height: 3px;
+
+    background: linear-gradient(90deg, green 30%, white 30%, white 70%, red 70%);
+    border-radius: 50px;
+
+    position: absolute;
+    bottom: -5px;
+}
+
+
+.home {
+    background-image: url(../img/Home/CERO.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/*==================== NOSOTROS ====================*/
+.nosotros,
+.nosotros-text{
+    height: 60vh;
+    padding: 20px;
+
+    position: relative;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+overflow: hidden;
+}
+
+.nosotros-text{
+    width: 500px;
+    height: 400px;
+
+    color: white;
+    font-weight: bold;
+   
+    
+    border: 5px inset white;
+
+    position: absolute;
+
+    background: rgba(255,255,255,0);
+-webkit-backdrop-filter: blur(3px);
+backdrop-filter: blur(3px);
+
+}
+
+.nosotros-img{
+    width: 400px;
+    height: 300px;
+
+
+    background-image: url(../img/Home/Nosotros.jpg);
+    background-size: cover;
+position: absolute;
+
+margin-left: 700px;
+
+}
+
+/*==================== CURSOS ====================*/
+.cursos{
+    height: 60vh;
+    padding: 20px;
+
+    position: relative;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+
+   overflow: hidden;
+}
+
+.cursos-text{
+    width: 500px;
+    height: 500px;
+
+    padding: 20px 40px;
+    color: white;
+    font-weight: bold;
+   
+    background: rgba(0, 0, 0, 0.438);
+    
+    border: 5px inset white;
+
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 5;
+}
+.cursos-text p{
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cursos-text p::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: white;   
+    position: absolute; 
+    bottom: -5px;
+}
+.cursos-img{
+    width: 400px;
+    height: 300px;
+
+
+    background-image: url(../img/Home/Nosotros.jpg);
+    background-size: cover;
+
+    position: absolute;
+    margin-left: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+.direccion {
+    background-image: url(../img/Home/CEROMEXICO\ SFDI.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.swiper {
+    width: 500px;
+    height: 600px;
+}
+
+.swiper-slide {
+    width: 500px;
+    height: 500px;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    
+    background: rgba(0, 0, 0, 0.5);
+
+    border: 5px double black;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide img{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--===== RESPONSIVE =====--*/
+@media (max-width:800px){
+
+    .home {
+        background-image: url(../img/Home/CERO.jpg);
+        background-repeat: no-repeat;
+        background-position: -155px 150px;
+        background-size: 170%;
+    }
+.capa{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, black 40%);
+}
+    .nosotros-text{
+        width: 300px;
+
+        background: rgba(0, 0, 0, 0.315);
+        text-align: center;
+        left: 20px;
+    }
+    
+    .nosotros-img{
+        width: 90%;
+        height: 300px;
+    margin-left: 200px;
+    
+    }
+
+    .cursos{
+        height: 80vh;
+        padding: 20px;
+    
+        position: relative;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+    
+       overflow: hidden;
+    }
+    .cursos-text{
+        width: 90%;
+        height: 500px;
+    
+        padding: 40px;
+
+        background: rgba(0, 0, 0, 0.801);
+        right: 15px;
+    }
+
+    .cursos-img{
+        width: 400px;
+        height: 300px;
+
+        position: absolute;
+        margin-left: -200px;
+    }
+
+
+
+
+    .direccion {
+        background-position: -320px;
+    }
+
+    .swiper {
+        width: 90%;
+        height: 60vh;
+    }
+    
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+
+        font-size: 1rem;
+    }
+    
+    .swiper-slide img{
+        width: 50%;
+    }
+    
+}
+    

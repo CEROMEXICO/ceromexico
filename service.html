@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--===== LIBRERIAS =====-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--===== LIBRERIAS =====-->
+
+    <!--===== IDENTIDAD =====-->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/RZ731LJf/CEROOFICIAL.png">
+    <title>CERO México</title>
+    <!--===== IDENTIDAD =====-->
+
+    <!--===== STYLE =====-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/navegation general.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style general.css">
+    <!--===== STYLE =====-->
+
+    <!--===== LIBRERIAS =====-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--===== Slide =====-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--===== LIBRERIAS =====-->
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="l-header">
+
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">
+                    CERO <span>México</span>
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#Home" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#Fecha" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="#Galeria" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="#Padrinos" class="nav__link">Cursos</a></li>
+                    <li class="nav__item"><a href="#Ceremonia" class="nav__link">Dirección</a></li>
+                    <li class="nav__item"><a href="#Asistencia" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-list-ui-alt"></i>
+            </div>
+        </nav>
+    </header>
+    <!--==================== HEADER ====================-->
+
+
+
+    <!--==================== HOME ====================-->
+    <section id="Home" class="home">
+        <div class="capa"></div>
+    </section>
+    <!--==================== HOME ====================-->
+
+
+
+
+
+
+    <!--==================== NOSOTROS ====================-->
+    <div class="division">
+        <div class="div_text">· Nosotros ·</div>
+    </div>
+
+    <section id="Nosotros" class="nosotros">
+        <div class="nosotros-img"></div>
+        <div class="nosotros-text">
+             Comando Especial de Reacción y Operaciones
+        </div>
+        
+    </section>
+    <!--==================== NOSOTROS ====================-->
+
+    <!--==================== CURSOS ====================-->
+    <div class="division">
+        <div class="div_text">· CURSOS ·</div>
+    </div>
+    
+    <section id="Cursos" class="cursos">
+        <div class="cursos-text">
+            <ul>
+                <p>CURSOS</p>
+    
+                <li>Protección a Funcionarios.</li>
+    
+                <li>Defensa Personal.</li>
+    
+                <li>Manejo, uso y manipulación de armas de fuego.</li>
+    
+                <li>Evacivo Defensivo de Manejo.</li>
+    
+                <li>Tiro de Precisión, Tiro de Reacción y Tiro de Combate.</li>
+    
+                <p>American Language Course.</p>
+    
+                <p>CONSULTORIA DE GRADO MILITAR.</p>
+    
+                <li>Dirección, Coordinación y Supervisión Operativa para Empresas de Seguridad y
+                    Protección Ejecutiva. Filtros y Selección de Personal.</li>
+            </ul>
+        </div>
+        <div class="cursos-img"></div>
+    
+    </section>
+    <!--==================== CURSOS ====================-->
+
+
+
+
+
+
+    <!--==================== DIRECCION ====================-->
+    <div class="division">
+        <div class="div_text">· Dirección ·</div>
+    </div>
+
+    <section id="Fecha" class="direccion">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/img/Home/CEROOFICIAL.png" alt="">
+                    CERO México
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/Home/SIIO.png" alt="">
+                    SIIO
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/Home/DEC.png" alt="">
+                    Dirección Educación Continua
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--==================== DIRECCION ====================-->
+
+
+
+
+
+
+
+
+    <!--==================== SITE JS ====================-->
+
+
+
+    <script src="assets/js/main.js"></script>
+
+
+    <!-- NOSOTROS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
