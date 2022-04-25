@@ -1,14 +1,18 @@
-section {
-    width: 100%;
-    height: 100vh;
-
+html {
+    scroll-behavior: smooth;
 }
+
+
+body{
+    background: linear-gradient(130deg, rgb(0, 0, 0), rgb(0, 43, 46));
+}
+
+
 
 .division {
     width: 100%;
     height: 100px;
 
-    margin: 20px auto;
 
     position: relative;
     justify-content: center;
@@ -25,6 +29,7 @@ section {
     align-items: center;
     display: flex;
 }
+
 .div_text::before {
     content: '';
 
@@ -38,35 +43,119 @@ section {
     bottom: 0px;
 }
 
-
+/*==================== HOME ====================*/
 .home {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-home{
+    width: 400px;
+    height: 400px;
     background-image: url(../img/Home/Background\ CERO\ two.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+
+
+box-shadow: inset -5px -5px 10px gainsboro,
+            inset 5px 5px 10px whitesmoke;
+
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 20px auto;
 }
 
 
-/*==================== NOSOTROS ====================*/
-
-
-/*==================== CURSOS ====================*/
-.description{
+.home-text {
+    width: auto;
     height: auto;
-    min-height: 40vh;
+
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.home-text .home-title {
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.home-subtitle {
+    
+    position: relative;
+
+    padding: 10px;
+
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.home-subtitle-text {
+    letter-spacing: 3px;
+    padding: 10px;
+
+    
+
+    z-index: 1;
+}
+
+
+.home-subtitle .line {
+    width: 25%;
+    height: 3px;
+}
+.home-subtitle .green{
+    background: green;
+}
+.home-subtitle .red{
+    background: red;
+}
+/*==================== NOSOTROS ====================*/
+section {
+    width: 100%;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.general_container {
+    width: 100%;
+    height: 70vh;
+}
+
+
+
+
+/*==================== NOSOTROS AND CURSOS ====================*/
+.description {
+
     padding: 40px 10px;
 
     background: #001d29;
 
     position: relative;
-   justify-content: center;
-   align-items: center;
-   display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
-   overflow: hidden;
+    overflow: hidden;
 }
 
-.description-text{
+.description-text {
     width: auto;
     max-width: 500px;
     height: auto;
@@ -74,20 +163,21 @@ section {
     padding: 40px;
     color: white;
     font-weight: bold;
-   
-  
+
+
     background: #001d29d5;
-    box-shadow:  5px 5px 10px #000c10,
-                 -5px -5px 10px #002e42;
-                 -webkit-backdrop-filter: blur(5px);
-                 backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px #000c10,
+        -5px -5px 10px #002e42;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 
     justify-content: center;
     align-items: center;
     display: flex;
     z-index: 5;
 }
-.description-text p{
+
+.description-text p {
     margin: 30px auto;
     text-align: center;
     text-transform: uppercase;
@@ -98,18 +188,18 @@ section {
     display: flex;
 }
 
-.description-text p::before{
+.description-text p::before {
     content: '';
     width: 50px;
     height: 3px;
     border-radius: 50px;
-    background: white;   
-    position: absolute; 
+    background: white;
+    position: absolute;
     bottom: -5px;
 }
 
-.img-nosotros, 
-.img-cursos{
+.img-nosotros,
+.img-cursos {
     width: 400px;
     height: 300px;
 
@@ -119,12 +209,14 @@ section {
 
     position: absolute;
 }
-.img-nosotros{
+
+.img-nosotros {
     background-image: url(../img/Home/Bestia.jpg);
     margin-left: 700px;
-    
+
 }
-.img-cursos{
+
+.img-cursos {
     background-image: url(../img/Home/Nosotros.jpg);
     margin-right: 700px;
 }
@@ -132,28 +224,27 @@ section {
 
 
 /* ==================== SERVICIOS ==================== */
-.servicios{
-    height: 60vh;
-
+.servicios {
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.max{
+
+.max {
     max-width: 70%;
 }
 
 
- .carousel .card{
-     width: 100%;
+.carousel .card {
+    width: 100%;
     height: 500px;
 
     overflow: hidden;
 
 }
 
- .carousel .card .box{
-     width: 100%;
+.carousel .card .box {
+    width: 100%;
     height: 100%;
 
     justify-content: center;
@@ -165,30 +256,35 @@ section {
 .services-imgtwo,
 .services-imgthree,
 .services-imgfour,
-.services-imgfive{
+.services-imgfive {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
-.services-imgone{
+
+.services-imgone {
     background-image: url(../img/Home/agent.jpeg);
 }
 
-.services-imgtwo{
+.services-imgtwo {
     background-image: url(../img/Home/Bestia.jpg);
 }
-.services-imgthree{
+
+.services-imgthree {
     background-image: url(../img/Home/instalaciones.png);
 }
-.services-imgfour{
+
+.services-imgfour {
     background-image: url(../img/Home/Nosotros.jpg);
 }
-.services-imgfive{
+
+.services-imgfive {
     background-image: url(../img/Home/consultoria.jpeg);
 }
- .carousel .card .text{
-     width: 90%;
-     padding: 10px 0;
+
+.carousel .card .text {
+    width: 90%;
+    padding: 10px 0;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -196,38 +292,45 @@ section {
     background: rgba(0, 0, 0, 0.699);
 
 }
-.text p{
+
+.text p {
     font-weight: normal;
     margin: 5px auto;
 }
-.owl-dots{
+
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dot{
+
+.owl-dot {
     height: 5px;
     width: 5px;
     margin: 0 5px;
-    outline: none!important;
+    outline: none !important;
     border-radius: 50%;
-    border: 2px solid white!important;
+    border: 2px solid white !important;
     transition: all 0.3s ease;
 }
-.owl-dot.active{
+
+.owl-dot.active {
     width: 35px;
     border-radius: 14px;
 }
+
 .owl-dot.active,
-.owl-dot:hover{
-    background: white!important;
+.owl-dot:hover {
+    background: white !important;
 }
 
-/* responsive media query start */
 
 
 
-/* r-------------------------------------------------------------------------------------------- */
+/* ==================== DIRECCION ==================== */
+
+
 .direccion {
+
     background-image: url(../img/Home/WipeOut08_15_2021_110831.832000\ \(1\).jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -243,7 +346,7 @@ section {
 
 .swiper {
     width: 500px;
-    height: 600px;
+    height: 80%;
 }
 
 .swiper-slide {
@@ -253,7 +356,7 @@ section {
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    
+
     background: rgba(0, 0, 0, 0.5);
 
     border: 5px double beige;
@@ -264,9 +367,86 @@ section {
     flex-direction: column;
 }
 
-.swiper-slide img{
+.swiper-slide img {
     width: 50%;
 }
+
+/* ==================== CONTACTO ==================== */
+
+.cero_contact {
+    padding: 20px;
+
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+
+    background: rgb(0, 26, 34);
+    margin-top: 100px;
+
+
+}
+
+.cero_contact,
+.contact-content,
+.contact-cero {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact-content {
+    width: 90%;
+    height: 80%;
+
+    padding: 20px;
+    background: #00292e;
+    box-shadow: 5px 5px 13px #001012,
+        -5px -5px 13px #00424a;
+    flex-direction: column;
+}
+
+.contact-cero {
+    width: 50%;
+    height: auto;
+
+    padding: 10px;
+}
+
+.contact-cero img {
+    width: 150px;
+    margin: 0 30px;
+}
+
+.contact-content p {
+    font-size: 2rem;
+
+    margin: 30px;
+
+}
+
+.contact-content p span {
+    font-weight: bold;
+}
+
+.contact-icons {
+    width: 30%;
+    height: auto;
+
+    padding: 10px;
+
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+
+.contact-icons i {
+    font-size: 1.5rem;
+    margin: 50px;
+}
+
+
+
 
 
 
@@ -279,41 +459,84 @@ section {
 
 
 /*--===== RESPONSIVE =====--*/
-@media (max-width:800px){
+@media (max-width:800px) {
 
-    .home {
-        background-image: url(../img/Home/CERO.jpg);
+    .img-home{
+        width: 250px;
+        height: 250px;
+        background-image: url(../img/Home/Background\ CERO\ two.jpg);
         background-repeat: no-repeat;
-        background-position: -155px 150px;
-        background-size: 170%;
-
-        
-    }
-.capa{
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, transparent 40%, black 50%);
-}
-
-
-
-.img-nosotros{
-    background-image: url(../img/Home/Bestia.jpg);
-    margin-left: 0px;
+        background-position: center;
+        background-size: cover;
     
-}
-.img-cursos{
-    background-image: url(../img/Home/Nosotros.jpg);
-    margin-right: 0px;
-}
+    
+    box-shadow: inset -5px -5px 10px gainsboro,
+                inset 5px 5px 10px whitesmoke;
+    
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 20px auto;
+    }
+    
+    
+    .home-text {
+        font-size: 1rem;
+        padding: 20px;
+    }
+    
+    .home-text .home-title {
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+    
+    .home-subtitle {
+        
+        position: relative;
+    
+        padding: 10px;
+    
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+    
+    .home-subtitle-text {
+        letter-spacing: 3px;
+        padding: 0px;
+    }
+    
+    
+    .home-subtitle .line {
+        width: 15%;
+        height: 3px;
+    }
+    .home-subtitle .green{
+        background: green;
+    }
+    .home-subtitle .red{
+        background: red;
+    }
 
 
-.servicios{
-    margin: 90px auto;
-}
-.max{
-    max-width: 90%;
-}
+    .img-nosotros {
+        background-image: url(../img/Home/Bestia.jpg);
+        margin-left: 0px;
+
+    }
+
+    .img-cursos {
+        background-image: url(../img/Home/Nosotros.jpg);
+        margin-right: 0px;
+    }
+
+
+    .servicios {
+        margin: 90px auto;
+    }
+
+    .max {
+        max-width: 90%;
+    }
 
 
 
@@ -321,15 +544,29 @@ section {
         width: 90%;
         height: 60vh;
     }
-    
+
     .swiper-slide {
 
         font-size: 1rem;
     }
-    
-    .swiper-slide img{
+
+    .swiper-slide img {
         width: 50%;
     }
-    
+
+    .contact-content {
+        width: 100%;
+        height: auto;
+
+        padding: 20px;
+        background: #00292e;
+        box-shadow: 5px 5px 13px #001012,
+            -5px -5px 13px #00424a;
+        flex-direction: column;
+    }
+
+    .contact-cero img {
+        width: 100px;
+        margin: 0 30px;
+    }
 }
-    

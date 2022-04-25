@@ -9,9 +9,12 @@
     <!--===== LIBRERIAS =====-->
 
     <!--===== IDENTIDAD =====-->
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/RZ731LJf/CEROOFICIAL.png">
+    <link rel="icon" type="image/png" href="assets/img/Home/CEROOFICIAL.png">
     <title>CERO México</title>
     <!--===== IDENTIDAD =====-->
+
+
+
 
     <!--===== STYLE =====-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -20,6 +23,10 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style general.css">
     <!--===== STYLE =====-->
+
+
+
+
 
     <!--===== LIBRERIAS =====-->
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
@@ -30,7 +37,7 @@
 
     <!--===== Slide Servicios =====-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
     <!--===== LIBRERIAS =====-->
@@ -50,11 +57,11 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#Home" class="nav__link activem">Inicio</a></li>
-                    <li class="nav__item"><a href="#Fecha" class="nav__link">Nosotros</a></li>
-                    <li class="nav__item"><a href="#Galeria" class="nav__link">Servicios</a></li>
-                    <li class="nav__item"><a href="#Padrinos" class="nav__link">Cursos</a></li>
-                    <li class="nav__item"><a href="#Ceremonia" class="nav__link">Dirección</a></li>
-                    <li class="nav__item"><a href="#Asistencia" class="nav__link">Contacto</a></li>
+                    <li class="nav__item"><a href="#Nosotros" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="#Servicios" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="#Cursos" class="nav__link">Cursos</a></li>
+                    <li class="nav__item"><a href="#Direccion" class="nav__link">Dirección</a></li>
+                    <li class="nav__item"><a href="#Contacto" class="nav__link">Contacto</a></li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -68,7 +75,20 @@
 
     <!--==================== HOME ====================-->
     <section id="Home" class="home">
-        <div class="capa"></div>
+    
+        <div class="img-home"></div>
+        
+        <div class="home-text">
+            <div class="home-title">COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES</div>
+            <div class="home-subtitle">
+                <div class="line green"></div>
+                <div class="home-subtitle-text">
+                    Protección Ejectutiva
+                </div>
+                <div class="line red"></div>
+            </div>
+        </div>
+    
     </section>
     <!--==================== HOME ====================-->
 
@@ -78,27 +98,30 @@
 
 
     <!--==================== NOSOTROS ====================-->
-    <div class="division">
-        <div class="div_text">· Nosotros ·</div>
-    </div>
+    <section id="Nosotros">
+        <div class="division">
+            <div class="div_text">· Nosotros ·</div>
+        </div>
+   
     
-    <section id="Cursos" class="description">
+    <div class="general_container description">
         <div class="description-text">
             COMANDO ESPECIAL DE REACCIÓN Y OPERACIONES
         </div>
         <div class="img-nosotros"></div>
-    
+    </div>
     </section>
     <!--==================== NOSOTROS ====================-->
 
 
 
-        <!--==================== SERVICIOS ====================-->
+    <!--==================== SERVICIOS ====================-->
+        <section id="Servicios">
         <div class="division">
             <div class="div_text">· SERVICIOS ·</div>
         </div>
         
-        <section id="Servicios" class="servicios">
+        <div class="general_container servicios">
             <div class="max">
 
             <div class="carousel owl-carousel">
@@ -157,8 +180,10 @@
 
             </div>
             </div>
+
+        </div>
         </section>
-        <!--==================== SERVICIOS ====================-->
+<!--==================== SERVICIOS ====================-->
 
 
 
@@ -166,11 +191,12 @@
 
 
     <!--==================== CURSOS ====================-->
+    <section id="Cursos">
     <div class="division">
         <div class="div_text">· CURSOS ·</div>
     </div>
     
-    <section id="Cursos" class="description">
+    <div class="general_container description">
         <div class="description-text">
             <ul>
                 <p>CURSOS</p>
@@ -194,7 +220,7 @@
             </ul>
         </div>
         <div class="img-cursos"></div>
-    
+    </div>
     </section>
     <!--==================== CURSOS ====================-->
 
@@ -204,11 +230,12 @@
 
 
     <!--==================== DIRECCION ====================-->
+    <section id="Direccion">
     <div class="division">
         <div class="div_text">· Dirección ·</div>
     </div>
 
-    <section id="Fecha" class="direccion">
+    <div class="general_container direccion">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -228,6 +255,7 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+    </div>
     </section>
     <!--==================== DIRECCION ====================-->
 
@@ -235,7 +263,32 @@
 
 
 
+<!--==================== CONTACTO ====================-->
+<section id="Contacto" class="cero_contact">
+<div class=" general_container cero_contact">
+    <div class="contact-content">
 
+        <div class="contact-cero">
+            <img src="assets/img/Home/CEROOFICIAL.png" alt="">
+            <img src="assets/img/Home/SIIO.png" alt="">
+            
+        </div>
+        <p>CERO <span>México</span></p>
+        <div class="contact-icons">
+            <i class="uil uil-facebook-f"></i>
+            <i class="uil uil-whatsapp"></i>
+            <i class="uil uil-envelope"></i>
+        </div>
+        <br>
+        <h3>
+            Copyright ©2022
+            <br> 
+            All rights reserved | made by Edgar Alonso</h3>
+    </div>
+</div>
+</section>
+
+<!--==================== CONTACTO ====================-->
 
 
     <!--==================== SITE JS ====================-->

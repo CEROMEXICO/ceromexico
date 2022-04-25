@@ -41,7 +41,7 @@ header{
 }
 
 header.abajo{
-    background-color: rgba(0, 0, 0, 0.541);
+    background: black;
 	
     padding: 15px 20px;
     transition: all 500ms;
