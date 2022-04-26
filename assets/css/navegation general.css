@@ -83,6 +83,7 @@ header.abajo{
         transition: .5s;
         backdrop-filter: blur(10px);
     }
+
 }
 .nav__item{
     margin-bottom: var(--mb-4);
@@ -91,13 +92,11 @@ header.abajo{
     position: relative;
     color: var(--dark-color);
 }
-.nav__link:hover{
-    color: var(--first-color);
-}
+
 .nav__logo{
     color: var(--white);
     
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -151,9 +150,6 @@ header.abajo{
           display: none;
       }
       .nav__link{
-          color: var(--white);
-      }
-      .nav__link:hover{
           color: var(--white);
       }
   }
