@@ -48,8 +48,6 @@ body{
     width: 100%;
     height: 100vh;
 
-    
-
     position: relative;
 
     justify-content: center;
@@ -58,18 +56,8 @@ body{
     flex-direction: column;
     overflow: hidden;
 }
-.home-imgradial{
-    width: 1000px;
-    height: 500px;
-
-    background-image: url(../img/Home/caballero\ aguila.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-
-    border-radius: 25% 25% 50% 50% / 0% 0% 100% 100%;
-
-    top: 0px;
+video{
+    width: 100%;
     position: absolute;
 }
 .img-home{
@@ -83,13 +71,13 @@ body{
     align-items: center;
     display: flex;
 
-    z-index: 1;
+    z-index: 5;
     
     overflow: hidden;
 }
 
 .img-home img{
-    width: 200%;
+    width: 100%;
 }
 .home-text {
     width: auto;
@@ -139,9 +127,18 @@ body{
     background: red;
 }
 
+.line{
+    animation: gr 2s linear infinite alternate;
+}
 
-
-
+@keyframes gr {
+    from {
+        width: 0;
+    }
+    to {
+        width: 25%;
+    }
+  }
 
 
 /*==================== NOSOTROS AND CURSOS ====================*/
@@ -508,10 +505,8 @@ section {
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width:800px) {
-    .home-imgradial{
-        width: 100%;
-        height: 200px;
-        top: 0px;
+    video{
+        width: 500%;
     }
     .img-home{
         width: 250px;
