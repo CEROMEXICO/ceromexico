@@ -179,7 +179,9 @@ section {
     display: flex;
     z-index: 5;
 }
-
+.text-center{
+    text-align: center;
+}
 .description-text p {
     margin: 30px auto;
     text-align: center;
