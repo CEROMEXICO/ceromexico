@@ -307,6 +307,8 @@ section {
 .text h4{
     font-size: 1rem;
     margin-bottom: 10px;
+
+    letter-spacing: 2.5px;
     justify-content: center;
     align-items: center;
     display: flex;
