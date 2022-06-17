@@ -522,7 +522,8 @@ section {
         height: 100%;
         position: absolute;
     
-        background: linear-gradient( black 20%, transparent, transparent, transparent, black 80%);
+        background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,0) 30%, black 45%);
     }
     .img-home{
         width: 250px;
