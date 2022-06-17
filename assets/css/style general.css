@@ -522,7 +522,7 @@ section {
         height: 100%;
         position: absolute;
     
-        background: linear-gradient( black 35%, transparent, black 65%);
+        background: linear-gradient( black 35%, transparent, transparent, transparent, black 65%);
     }
     .img-home{
         width: 250px;
